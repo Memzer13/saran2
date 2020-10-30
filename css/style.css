@@ -66,6 +66,9 @@ h4 {
   div.heads1 h3 {
     font-size: 3rem;
   }
+  div.brainbox {
+    background-size: 80%;
+  }
 }
 
 @media screen and (max-width: 890px) {
