@@ -23,7 +23,7 @@ h4 {
 /*********************************BODY***************************************/
 /*********************************JUMBO**************************************/
 .jumbo {
-  background: url(about1.jpg) no-repeat center;
+  background: url(about.jpg) no-repeat center;
   background-size: cover;
   height: 100vh;
   width: 100%;
@@ -53,7 +53,8 @@ h4 {
     display: grid;
   }
   div.jumboheader {
-    font-size: 6rem;
+    font-size: 4rem;
+    background-image: none;
   }
   div.container3 {
     opacity: 1;
@@ -91,8 +92,7 @@ h4 {
 
 .jumboheader {
   cursor: default;
-  color: black;
-  text-align: center;
+  color: white;
   -ms-grid-columns: 100%;
       grid-template-columns: 100%;
   -ms-grid-rows: 100vh;
@@ -100,21 +100,40 @@ h4 {
   height: 100vh;
   width: 100%;
   padding-top: 40vh;
-  font-family: 'Poiret One', cursive;
-  font-size: 4rem;
+  font-family: 'Rock Salt', cursive;
+  font-size: 3.5rem;
   font-weight: bolder;
-  line-height: 3.5rem;
-  word-wrap: wrap;
-}
-
-.quotes {
+  line-height: 4.5rem;
   text-align: center;
-  padding: 25px 25px;
-  margin-left: 4rem;
-  margin-right: 4rem;
 }
 
 /*********************************JUMBO**************************************/
+/******************************BRAIN BOX*************************************/
+.brainbox {
+  background: url(brain3.png) no-repeat center;
+  background-size: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.quote {
+  font-family: 'Trispace', sans-serif;
+  padding-top: 50;
+  text-align: center;
+  padding: 70px 25px;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  font-weight: 999;
+  color: black;
+}
+
+.nambox {
+  background: url(brain.png) no-repeat center;
+  display: -ms-grid;
+  display: grid;
+}
+
 /*********************************IMG CONTAINER******************************/
 .grid-container1 {
   display: -ms-grid;
@@ -124,6 +143,10 @@ h4 {
   -ms-grid-rows: 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr;
   gap: 0px 0px;
+}
+
+.linkboxes {
+  background-color: rgba(95, 158, 160, 0.116);
 }
 
 .linkbox {
@@ -190,9 +213,11 @@ h4 {
   /************FULL SCREEN **************/
   .textblock {
     padding: 25px 25px;
-    -webkit-box-shadow: 1px 1px 1px #888;
-            box-shadow: 1px 1px 1px #888;
+    -webkit-box-shadow: 1px 1px 3px 1px #888;
+            box-shadow: 1px 1px 3px 1px #888;
     border-radius: 10px;
+    border: 1px black;
+    background-color: rgba(0, 0, 80, 0.033);
   }
 }
 
