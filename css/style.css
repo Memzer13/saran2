@@ -67,10 +67,10 @@ h4 {
     font-size: 3rem;
   }
   div.brainbox {
-    background-size: 80%;
+    background-size: 50%;
   }
   div.nambox {
-    background-size: 100%;
+    background-size: 50%;
   }
 }
 
@@ -208,6 +208,7 @@ h4 {
   padding-top: 5rem;
   padding-bottom: 5rem;
   overflow: hidden;
+  cursor: default;
 }
 
 .textblock {
@@ -249,7 +250,6 @@ p {
   padding-left: 2px;
   padding-right: 20px;
   border-radius: 20px;
-  padding-bottom: 20px;
 }
 
 .pic2 {
@@ -399,7 +399,7 @@ footer {
 }
 
 .footer-distributed .footer-center p :hover {
-  color: #000141;
+  color: #8cbad8;
 }
 
 .footer-distributed .footer-center p span {
