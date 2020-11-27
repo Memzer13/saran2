@@ -85,7 +85,7 @@ h4 {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
   }
 }
 
@@ -100,9 +100,9 @@ h4 {
   cursor: default;
   color: white;
   -ms-grid-columns: 100%;
-      grid-template-columns: 100%;
+  grid-template-columns: 100%;
   -ms-grid-rows: 100vh;
-      grid-template-rows: 100vh;
+  grid-template-rows: 100vh;
   height: 100vh;
   width: 100%;
   padding-top: 40vh;
@@ -117,10 +117,8 @@ h4 {
 /******************************BRAIN BOX*************************************/
 .brainbox {
   background: url(brain3.png) no-repeat center;
-  background-size: 20%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
 }
 
 .quote {
@@ -145,14 +143,14 @@ h4 {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   -ms-grid-rows: 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   gap: 0px 0px;
 }
 
 .linkboxes {
-  background-color: rgba(95, 158, 160, 0.116);
+  background-color: rgba(255, 255, 255, 0);
 }
 
 .linkbox {
@@ -160,34 +158,34 @@ h4 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   text-align: center;
   font-size: 2rem;
   font-weight: bolder;
   padding-top: 2rem;
   padding-bottom: 2rem;
   grid-gap: 2rem;
-  -ms-grid-columns: (minmax(250px, 2fr))[auto-fill];
-      grid-template-columns: repeat(auto-fill, minmax(250px, 2fr));
+  -ms-grid-columns: minmax(250px, 2fr) [auto-fill];
+  grid-template-columns: repeat(auto-fill, minmax(250px, 2fr));
 }
 
 .container3 {
   position: relative;
   width: 100%;
   padding-top: 2rem;
-  opacity: 1;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
+}
+
+.container3 :hover {
+  opacity: 1;
 }
 
 .image {
   width: 74%;
   height: auto;
   border-radius: 10px;
-}
-
-.container3:hover {
   opacity: 0.75;
 }
 
@@ -196,6 +194,13 @@ h4 {
   margin-top: 60px;
   font-weight: bold;
   margin-top: 10px;
+}
+
+@media (min-width: 1350px) {
+  .pic2a {
+    max-width: 300px;
+    max-height: 300px;
+  }
 }
 
 /*********************************IMG CONTAINER******************************/
@@ -221,7 +226,7 @@ h4 {
   .textblock {
     padding: 25px 25px;
     -webkit-box-shadow: 1px 1px 3px 1px #888;
-            box-shadow: 1px 1px 3px 1px #888;
+    box-shadow: 1px 1px 3px 1px #888;
     border-radius: 10px;
     border: 1px black;
     background-color: rgba(0, 0, 80, 0.033);
@@ -230,7 +235,7 @@ h4 {
 
 .textblock .col {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   width: 250px;
   height: 150px;
   color: #343434;
@@ -259,17 +264,24 @@ p {
   border-radius: 20px;
 }
 
+.pic2a {
+  float: right;
+  padding-left: 20px;
+  padding-right: 2px;
+  border-radius: 20px;
+}
+
 @media screen and (max-width: 600px) {
   div.main {
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
   h3 {
     font-size: 3rem;
     -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    -ms-grid-row-align: center;
+    align-self: center;
   }
 }
 
@@ -307,7 +319,7 @@ footer {
 .footer-distributed {
   background-color: rgba(0, 0, 0, 0.7);
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   width: 100%;
   text-align: left;
   font: bold 16px sans-serif;
